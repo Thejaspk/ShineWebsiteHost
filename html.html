@@ -1,0 +1,457 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css>
+
+    
+
+    <title>Shine</title>
+
+ 
+
+    <style>
+
+        .normalbtn{
+
+            background-color:#7F00FF;
+
+            color:white;
+
+            border-color:#7F00FF ;
+
+            border-radius: 8px;
+
+        }
+
+        .normalbtn:hover{
+
+            background-color: blueviolet;
+
+            border-color: blueviolet;
+
+        }
+
+        .loginbtn{
+
+            border-color:#7F00FF;
+
+            color: #7F00FF;
+
+        }
+
+        .loginbtn:hover{
+
+            background-color:#7F00FF;
+
+            border-color:#7F00FF;
+
+        }
+
+        i{
+
+            color:grey;
+
+        }
+
+        i:hover{
+
+            color:#7F00FF;
+
+        }
+
+ 
+
+        .container h1{
+
+            font-weight: 500;
+
+        }
+
+ 
+
+        .nav-element{
+
+            margin-left:15px;
+
+            margin-right:15px;
+
+        }
+
+        .carousel-indicators li {
+
+            width: 10px;
+
+            height: 10px;
+
+            border-radius: 100%;
+
+        }
+
+        .carousel-item img{
+
+            width:inherit
+
+        }
+
+ 
+
+        div.gallery {
+
+        margin: 5px;
+
+        border: 1px solid #ccc;
+
+        float: left;
+
+        width: 180px;
+
+ 
+
+        }
+
+ 
+
+        div.gallery:hover {
+
+        border: 1px solid #777;
+
+        }
+
+ 
+
+        div.gallery img {
+
+        width: 100%;
+
+        height: auto;
+
+        }
+
+ 
+
+        div.desc {
+
+        padding: 15px;
+
+        text-align: center;
+
+        }
+
+        .row{
+
+        margin-top: 30px;
+
+        margin-bottom: 30px;
+
+        }
+
+    </style>
+
+  </head>
+
+ 
+
+  <body>
+
+    <!--Navbar-->    
+
+    <nav class="navbar navbar-light bg-light">
+
+        <a class="navbar-brand" href="#">
+
+            <img src=https://www.shine.com/next/static/images/shine-logo.png width="50" height="30" alt="">
+
+        </a>
+
+        <form class="form-inline mr-auto">
+
+          <input class="form-control mr-sm-2" type="search" placeholder="Job title, skills" aria-label="Search">
+
+          <button class="normalbtn btn btn-outline-success my-2 my-sm-0" type="submit">    <svg xmlns=http://www.w3.org/2000/svg width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+
+          </svg></button>
+
+        </form>
+
+        <button type="button" class="nav-element loginbtn btn btn-outline-primary">Login</button>
+
+        <button type="button" class="nav-element normalbtn btn btn-primary">Register</button>
+
+        <a href="#"><i class="nav-element bi-cart"></i></a>
+
+        <a href="#"><i class="nav-element bi-bell"></i></a>
+
+    </nav>
+
+   
+
+    <!--Carousel-->  
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+ 
+
+        <!-- Indicators -->
+
+        <ul class="carousel-indicators">
+
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+
+          <li data-target="#demo" data-slide-to="1"></li>
+
+          <li data-target="#demo" data-slide-to="2"></li>
+
+        </ul>
+
+      
+
+        <!-- The slideshow -->
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <img src=https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2FCertification_HR_Desktop.png&w=1920&q=75 alt="Los Angeles">
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img src=https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2FBFSC_banner_Desktop.jpg&w=1920&q=75 alt="Chicago">
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img src=https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2Fcandidate-website-desktop-4.jpg&w=1920&q=75 alt="New York">
+
+          </div>
+
+        </div>
+
+      
+
+        <!-- Left and right controls -->
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+
+          <span class="carousel-control-prev-icon"></span>
+
+        </a>
+
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+
+          <span class="carousel-control-next-icon"></span>
+
+        </a>      
+
+    </div>
+
+  
+
+  <!--Cool places to work-->  
+
+  <div class="container">
+
+      <div class="row">
+
+          <div class="col">
+
+            <h1 class="text-center">Cool Places to Work</h1>
+
+          </div>   
+
+      </div>
+
+      <div class="row">
+
+          <div class="col-sm">
+
+            <div class="gallery">
+
+                <a target="_blank" href=https://www.genpact.com/>
+
+                  <img src=https://static2.shine.com/r/m/images/employerbranding/c250bee50f5b490aac4b63fe281ab79e.png alt="Genpact" width="600" height="400">
+
+                  <img src=https://static2.shine.com/r/m/images/employerbranding/4ba34994bc414de7984c38c9cee86ebe.png alt="Genpact">
+
+              </div>
+
+          </div>
+
+          <div class="col-sm">
+
+            <div class="gallery">
+
+                <a target="_blank" href=https://www.adityabirla.com/>
+
+                  <img src=https://static2.shine.com/r/m/images/employerbranding/a36b33d676604e72ba5be98575967d86.webp alt="Forest" width="600" height="400">
+
+                </a>
+
+                <img src=https://static2.shine.com/r/m/images/employerbranding/2dffba9729a14f2bb391c35b08166eb8.webp alt="aditya">
+
+              </div>
+
+          </div>
+
+          <div class="col-sm">
+
+            <div class="gallery">
+
+                <a target="_blank" href=www.infosys.com>
+
+                <img src=https://static2.shine.com/r/m/images/employerbranding/6dc953ccca074ea9aae8089a93b62cfe.webp alt="infosys" width="600" height="400">
+
+                </a>
+
+                <img src=https://static2.shine.com/r/m/images/employerbranding/dd9f7c2bfffa430a87dfcf324e0f808c.webp alt="infosys">
+
+            </div>
+
+          </div>
+
+          <div class="col-sm">
+
+            <div class="gallery">
+
+                <a target="_blank" href=https://www.teleperformance.com/>
+
+                  <img src=https://static2.shine.com/r/m/images/employerbranding/d98a014b326648178fbb08eef46ac70e.png alt="Teleperfomance" width="600" height="400">
+
+                </a>
+
+                <img src=https://static2.shine.com/r/m/images/employerbranding/6c23dfb3c9224480870c900b8dddf299.png >
+
+              </div>
+
+          </div>
+
+          <div class="col-sm">
+
+            <div class="gallery">
+
+                <a target="_blank" href=https://www.onlinesbi.sbi/>
+
+                  <img src=https://static2.shine.com/r/m/images/employerbranding/bff4ce1d82444630b1e39880bb7b9269.webp alt="SBI" width="600" height="400">
+
+                </a>
+
+                <img src=https://static2.shine.com/r/m/images/employerbranding/9d072588f63b4aa6bf6e7dcbd9c1e375.webp >
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+ 
+
+  <!--Top companies hiring-->  
+
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col">
+
+          <h1 class="text-center">Top Companies Hiring</h1>
+
+        </div>   
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm">
+
+            <div class="gallery">
+
+                <a href="#"> <img src=https://static2.shine.com/r/m/images/employerbranding/ab28f0af876f42cb96302faaea9e1671.png alt="Genpact"></a> 
+
+            </div>
+
+        </div>
+
+        <div class="col-sm">
+
+            <div class="gallery">
+
+                <a href="#"> <img src=https://static2.shine.com/r/m/images/employerbranding/b076fc83cebb42069205c9a410c9f618.png alt="Genpact"></a>
+
+              </div>
+
+        </div>
+
+        <div class="col-sm">
+
+            <div class="gallery">
+
+                <a href="#"><img src=https://static2.shine.com/r/m/images/employerbranding/a307d745fbbe46d3822e5b4e6f3fed55.png alt="Genpact"></a>
+
+              </div>
+
+        </div>
+
+        <div class="col-sm">
+
+            <div class="gallery">
+
+                <a href="#"><img src=https://static2.shine.com/r/m/images/employerbranding/666b83a3c4974b4f92613fce536a4251.png alt="Genpact" ></a>
+
+              </div>
+
+        </div>
+
+        <div class="col-sm">
+
+            <div class="gallery">
+
+                <a href="#"><img src=https://static2.shine.com/r/m/images/employerbranding/e93bc72765914ce481fc7d0611df7536.png alt="Genpact" ></a>
+
+ 
+
+              </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ 
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=https://code.jquery.com/jquery-3.2.1.slim.min.js integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src=https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>  
+
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ 
+
+  </body>
+
+ 
+
+</html>
